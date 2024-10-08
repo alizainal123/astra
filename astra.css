@@ -1,0 +1,279 @@
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+h4 {
+    color: black;
+    font-size: 24px;
+    margin: 16px 0;
+    font-weight: 500;
+}
+h6 {
+    font-weight: normal;
+    color: #67768E;
+    font-size: 18px;
+}
+.primary-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.primary-section {
+    background-image: linear-gradient(35deg, rgb(6, 0, 151) 0%, rgb(130, 4, 255) 73%, rgb(193, 15, 255) 100%);
+    padding: 100px;
+}
+.container {
+    max-width: 1280px;
+    padding: 30px;
+    margin: auto;
+}
+.navbar ul li a img {
+    filter: invert(100%);
+    width: 20px;
+    height: 20px;
+}
+.navbar {
+    justify-content: end;
+    display: flex;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+.navbar ul li {
+    margin: 0 20px;
+    padding: 10px 0;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #f2f5f7c2;
+    font-size: 18px;
+    transition: .5s ease;
+}
+.navbar ul li a.active {
+    color: white;
+    transition: .5s ease;
+}
+.navbar ul li a:hover {
+    color: white;
+    transition: .5s ease;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    position: relative; /* Agar dropdown muncul di bawah item yang sesuai */
+}
+
+.navbar ul li {
+    margin: 0 20px;
+    padding: 10px 0;
+    position: relative; /* Memungkinkan dropdown untuk diposisikan */
+}
+
+.navbar ul li .dropdown {
+    display: none; /* Menyembunyikan dropdown secara default */
+    position: absolute; /* Mengatur posisi dropdown */
+    background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang dropdown */
+    border-radius: 8px; /* Membuat sudut dropdown membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    z-index: 1000; /* Agar dropdown muncul di atas elemen lain */
+    margin-top: 10px; /* Jarak antara item menu dan dropdown */
+}
+
+.navbar ul li:hover .dropdown {
+    display: block; /* Menampilkan dropdown saat hover */
+}
+
+.navbar ul li .dropdown a {
+    display: block; /* Memastikan setiap tautan dalam dropdown berperilaku seperti blok */
+    padding: 10px 20px; /* Ruang di dalam tautan dropdown */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #000; /* Warna teks */
+}
+
+.navbar ul li .dropdown a:hover {
+    background-color: #f2f5f7; /* Warna latar belakang saat hover */
+}
+
+
+/* PRIMARY SECTION */
+.row {
+    display: flex;
+    flex-direction: column; /* Menumpuk item secara vertikal */
+    align-items: center; /* Meratakan item ke tengah */
+}
+.container .row .col h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: white;
+}
+.primary-section .container .row .col h6 {
+    color: white;
+    margin: 32px 0;
+}
+.primary-section .container .row .col a {
+    background-color: #ffcd57;
+    padding: 30px 45px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* SECONDARY SECTION */
+.secondary-section .container .row {
+    margin-top: 70px;
+}
+
+/* THIRD SECTION */
+#third-section {
+    margin-top: 70px;
+}
+#third-section .container .row .col img {
+    width: 380px;
+    height: 480px;
+}
+
+/* FOURTH SECTION */
+#fourth-section .container {
+    padding: 100px 30px;
+}
+#fourth-section .container .row .col:first-child {
+    max-width: 500px;
+}
+
+/* FIFTH SECTION */
+#fifth-section {
+    background-color: #f9f6fe;
+}
+#fifth-section .container {
+    text-align: center;
+    width: 750px;
+    padding: 100px 30px;
+}
+#fifth-section .container .row .col {
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#fifth-section .container .row .col h6:first-of-type {
+    margin-top: 24px;
+    margin-bottom: 35px;
+}
+#fifth-section .container .row .col h6:last-of-type {
+    font-weight: bold;
+}
+
+/* SIXTH SECTION */
+#sixth-section .container {
+    padding: 140px 30px;
+}
+#sixth-section .container .row .col {
+    width: 350px;
+}
+
+/* SEVENTH SECTION  */
+#seventh-section {
+    background-image: linear-gradient(35deg, rgb(6, 0, 151) 0%, rgb(130, 4, 255) 73%, rgb(193, 15, 255) 100%);
+}
+#seventh-section .container {
+    text-align: center;
+    width: 750px;
+    padding: 80px 30px;
+}
+#seventh-section .container .row {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Menumpuk item secara vertikal */
+}
+#seventh-section .container .row .col h2 {
+    margin-top: 24px;
+    margin-bottom: 35px;
+    color: white;
+}
+#seventh-section .container .row .col a {
+    background-color: rgb(255, 205, 87);
+    padding: 30px 45px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.eighth-section .container .row .col h6 a {
+    font-weight: normal;
+    font-size: 18px;
+    text-decoration: none;
+}
+.nineth-section {
+    background-color: #EEEEEE;
+    margin-top: 40px;
+}
+.nineth-section .container .row {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.nineth-section .container .row .col a {
+    text-decoration: none;
+}
+
+/* Gaya Responsif */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Menumpuk item secara vertikal */
+        align-items: center; /* Meratakan item ke tengah */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Menumpuk item navbar secara vertikal */
+        align-items: center; /* Meratakan item navbar */
+    }
+
+    .navbar ul li {
+        margin: 10px 0; /* Mengatur margin untuk penumpukan secara vertikal */
+    }
+
+    .primary-section .container .row {
+        text-align: center; /* Meratakan konten untuk layar kecil */
+    }
+
+    #third-section .container .row,
+    #fourth-section .container .row,
+    #sixth-section .container .row,
+    #seventh-section .container .row {
+        flex-direction: column; /* Menumpuk item secara vertikal di bagian ini */
+        align-items: center; /* Meratakan item */
+    }
+
+    .secondary-section .container .row .col,
+    #fourth-section .container .row .col,
+    #sixth-section .container .row .col {
+        max-width: 100%; /* Memastikan kolom mengambil lebar penuh */
+        margin-bottom: 20px; /* Menambahkan jarak antar item yang ditumpuk */
+    }
+
+    /* Menyesuaikan gambar agar responsif */
+    .primary-section .container .row .col img,
+    #third-section .container .row .col img,
+    #fourth-section .container .row .col img,
+    #sixth-section .container .row .col img {
+        width: 100%; /* Membuat gambar responsif */
+        height: auto; /* Mempertahankan rasio aspek */
+    }
+}
